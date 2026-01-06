@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindustan Engineering Works - Gallery</title>
+    <style>
+        /* Theme Variables based on the video */
+        :root {
+            --dark-bg: #1a1a1a;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --accent-gold: #7B3F00;
+            --text-white: #ffffff;
+            --text-gray: #a0a0a0;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-white);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-gold);
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--accent-gold);
+            display: inline-block;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+
+        /* Gallery Grid Layout */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        
+        .card {
+            background: linear-gradient(black, grey);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            border-color: var(--accent-gold);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            filter: grayscale(30%); /* Gives an industrial look */
+            transition: filter 0.3s ease;
+        }
+
+        .card:hover .card-image {
+            filter: grayscale(0%);
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            margin: 0 0 10px 0;
+            text-transform: capitalize;
+        }
+
+        .card-description {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Price tag styling as seen in the video */
+        .card-price {
+            margin-top: 15px;
+            font-weight: bold;
+            color: var(--text-white);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="section-title">Gallery of our one of the best and finest works</h2>
+    
+    <img src="hind1.png" width="370px">
+    <br><br><br>
+    
+    <!-- doors started -->
+
+    <div class="gallery-container">
+        <div class="card">
+            <img src="images/door1.jpg" alt="Steel Gates" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Premium Gates</h3>
+                <p class="card-description">High-quality stainless steel gates designed for durability and modern aesthetics.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img src="images/door2.jpg" alt="Steel Gates" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Premium Gates</h3>
+                <p class="card-description">High-quality stainless steel gates designed for durability and modern aesthetics.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img src="images/door3.jpg" alt="Steel Gates" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Premium Gates</h3>
+                <p class="card-description">High-quality stainless steel gates designed for durability and modern aesthetics.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img src="images/door4.jpg" alt="Steel Gates" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Premium Gates</h3>
+                <p class="card-description">High-quality stainless steel gates designed for durability and modern aesthetics.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img src="images/door5.jpg" alt="Steel Gates" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Premium Gates</h3>
+                <p class="card-description">High-quality stainless steel gates designed for durability and modern aesthetics.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="card">
+            <img src="images/door6.jpg" alt="Steel Gates" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Premium Gates</h3>
+                <p class="card-description">High-quality stainless steel gates designed for durability and modern aesthetics.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <div class="card">
+            <img src="images/door7.jpg" alt="Steel Gates" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Premium Gates</h3>
+                <p class="card-description">High-quality stainless steel gates designed for durability and modern aesthetics.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="card">
+            <img src="images/door8.jpg" alt="Steel Gates" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Premium Gates</h3>
+                <p class="card-description">High-quality stainless steel gates designed for durability and modern aesthetics.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img src="images/door9.jpg" alt="Steel Gates" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Premium Gates</h3>
+                <p class="card-description">High-quality stainless steel gates designed for durability and modern aesthetics.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img src="images/door10.jpg" alt="Steel Gates" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Premium Gates</h3>
+                <p class="card-description">High-quality stainless steel gates designed for durability and modern aesthetics.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <!-- door ended -->
+        
+        
+
+        <div class="card">
+            <img src="images/stair1.jpg" alt="Steel Stairs" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Designer Stairs</h3>
+                <p class="card-description">Crafted with a blend of quality steel and wood for a sophisticated interior look.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        <div class="card">
+            <img src="images/stair2.jpg" alt="Steel Stairs" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Designer Stairs</h3>
+                <p class="card-description">Crafted with a blend of quality steel and wood for a sophisticated interior look.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img src="images/stair3.jpg" alt="Steel Stairs" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Designer Stairs</h3>
+                <p class="card-description">Crafted with a blend of quality steel and wood for a sophisticated interior look.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        <div class="card">
+            <img src="images/stair4.jpg" alt="Steel Stairs" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Designer Stairs</h3>
+                <p class="card-description">Crafted with a blend of quality steel and wood for a sophisticated interior look.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+        
+        
+        <!-- stairs ended -->
+        
+
+        <div class="card">
+            <img src="images/fence1.jpg" alt="Balcony Grills" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Balcony Grills</h3>
+                <p class="card-description">Highest grade steel and wood railings providing safety and elegance to your home.</p>
+                <p class="card-price">₹200 per square feet</p>
+            </div>
+        </div>
+
+
+        <!-- fences ended -->
+        
+        <div class="card">
+            <img src="images/shutter1.jpg" alt="Industrial Shutters" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Rolling Shutters</h3>
+                <p class="card-description">Advanced motorized shutters for industrial and commercial security needs.</p>
+                <p class="card-price">Starting from ₹200 sq.ft</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="images/shutter2.jpg" alt="Industrial Shutters" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Rolling Shutters</h3>
+                <p class="card-description">Advanced motorized shutters for industrial and commercial security needs.</p>
+                <p class="card-price">Starting from ₹200 sq.ft</p>
+            </div>
+        </div>
+        
+        
+        
+        <div class="card">
+            <img src="images/shutter3.jpg" alt="Industrial Shutters" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Rolling Shutters</h3>
+                <p class="card-description">Advanced motorized shutters for industrial and commercial security needs.</p>
+                <p class="card-price">Starting from ₹200 sq.ft</p>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
